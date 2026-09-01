@@ -16443,6 +16443,205 @@ body.megamenu-popup-active .mobile-nav__content {
   border-radius: 7px 0 7px 7px;
 }
 
+/*--------------------------------------------------------------
+# Always On
+--------------------------------------------------------------*/
+.always-on {
+  position: relative;
+  background-color: var(--hyperfly-black, #08070C);
+  padding: 140px 0;
+  overflow: hidden;
+}
+@media (max-width: 991px) {
+  .always-on {
+    padding: 90px 0;
+  }
+}
+.always-on::before {
+  content: "";
+  position: absolute;
+  top: -220px;
+  right: -160px;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(var(--hyperfly-base-rgb, 185, 133, 45), 0.16) 0%, rgba(var(--hyperfly-base-rgb, 185, 133, 45), 0) 70%);
+  pointer-events: none;
+}
+.always-on__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  gap: 90px;
+}
+@media (max-width: 991px) {
+  .always-on__inner {
+    flex-direction: column;
+    gap: 60px;
+  }
+}
+.always-on__intro {
+  flex: 0 0 auto;
+  width: 38%;
+  position: sticky;
+  top: 140px;
+}
+@media (max-width: 991px) {
+  .always-on__intro {
+    width: 100%;
+    position: static;
+  }
+}
+.always-on__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--hyperfly-base, #B9852D);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 0 0 26px;
+}
+.always-on__pulse {
+  position: relative;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--hyperfly-base, #B9852D);
+}
+.always-on__pulse::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 1px solid var(--hyperfly-base, #B9852D);
+  animation: alwaysOnPulse 2.4s ease-out infinite;
+}
+@keyframes alwaysOnPulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(2.1);
+    opacity: 0;
+  }
+}
+.always-on__title {
+  color: var(--hyperfly-white, #F5F0EA);
+  font-size: 44px;
+  line-height: 1.15;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0 0 22px;
+}
+@media (max-width: 1199px) {
+  .always-on__title {
+    font-size: 36px;
+  }
+}
+.always-on__title__accent {
+  color: var(--hyperfly-base, #B9852D);
+}
+.always-on__text {
+  color: rgba(var(--hyperfly-white-rgb, 245, 240, 234), 0.65);
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 500;
+  max-width: 380px;
+  margin: 0;
+}
+.always-on__log {
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 0;
+  padding-left: 34px;
+}
+@media (max-width: 575px) {
+  .always-on__log {
+    padding-left: 22px;
+  }
+}
+.always-on__thread {
+  position: absolute;
+  left: 3px;
+  top: 6px;
+  bottom: 6px;
+  width: 1px;
+  background: linear-gradient(180deg, rgba(var(--hyperfly-base-rgb, 185, 133, 45), 0) 0%, rgba(var(--hyperfly-base-rgb, 185, 133, 45), 0.5) 15%, rgba(var(--hyperfly-base-rgb, 185, 133, 45), 0.5) 85%, rgba(var(--hyperfly-base-rgb, 185, 133, 45), 0) 100%);
+}
+.always-on__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+.always-on__msg {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  gap: 22px;
+}
+@media (max-width: 575px) {
+  .always-on__msg {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+.always-on__msg::before {
+  content: "";
+  position: absolute;
+  left: -34px;
+  top: 12px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--hyperfly-base, #B9852D);
+}
+@media (max-width: 575px) {
+  .always-on__msg::before {
+    left: -22px;
+  }
+}
+.always-on__msg--offset {
+  margin-left: 48px;
+}
+@media (max-width: 767px) {
+  .always-on__msg--offset {
+    margin-left: 24px;
+  }
+}
+.always-on__msg__time {
+  flex: 0 0 72px;
+  color: rgba(var(--hyperfly-white-rgb, 245, 240, 234), 0.4);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+.always-on__msg__bubble {
+  position: relative;
+  margin: 0;
+  background-color: var(--hyperfly-white, #F5F0EA);
+  color: var(--hyperfly-black, #08070C);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+  padding: 18px 28px;
+  border-radius: 4px 18px 18px 18px;
+  box-shadow: 0 16px 32px rgba(var(--hyperfly-black-rgb, 8, 7, 12), 0.28);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.always-on__msg:hover .always-on__msg__bubble {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px rgba(var(--hyperfly-black-rgb, 8, 7, 12), 0.35);
+}
+
 .feature-two {
   position: relative;
   padding: 255px 0 120px;
