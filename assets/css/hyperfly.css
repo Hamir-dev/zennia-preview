@@ -4186,6 +4186,21 @@ h6 {
     margin: 0 0 30px;
   }
 }
+.footer-one__top__text {
+  color: rgba(var(--hyperfly-white-rgb, 245, 240, 234), 0.65);
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 500;
+  max-width: 620px;
+  margin: -18px 0 40px;
+}
+@media (max-width: 767px) {
+  .footer-one__top__text {
+    font-size: 16px;
+    line-height: 28px;
+    margin: -14px 0 30px;
+  }
+}
 .footer-one__top .hyperfly-btn:hover {
   color: var(--hyperfly-black, #08070C);
 }
