@@ -16364,8 +16364,19 @@ body.megamenu-popup-active .mobile-nav__content {
   margin-bottom: 10px;
   font-weight: 600;
 }
+.feature-one__item__subtitle {
+  color: var(--hyperfly-base, #B9852D);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin: 0 0 12px;
+}
 .feature-one__item__text {
   margin: 0;
+}
+.feature-one__cta {
+  margin-top: 50px;
 }
 .feature-one__item__number {
   position: absolute;
