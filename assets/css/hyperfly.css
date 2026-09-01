@@ -14464,12 +14464,13 @@ body.megamenu-popup-active .mobile-nav__content {
 .main-slider-one {
   position: relative;
   background-color: var(--hyperfly-black, #08070C);
-  padding: 330px 0 0;
-  margin-bottom: -115px;
+  padding: 330px 0 190px;
+  min-height: 860px;
 }
 @media (max-width: 1199px) {
   .main-slider-one {
     padding-top: 250px;
+    min-height: 700px;
   }
 }
 @media (max-width: 767px) {
@@ -14508,7 +14509,7 @@ body.megamenu-popup-active .mobile-nav__content {
   position: relative;
   z-index: 2;
   max-width: 740px;
-  margin-bottom: 130px;
+  margin-bottom: 69px;
 }
 @media (max-width: 767px) {
   .main-slider-one__content {
