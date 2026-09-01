@@ -19090,8 +19090,8 @@ body.megamenu-popup-active .mobile-nav__content {
   padding: 40px 35px 40px;
 }
 .tab-one__image--single .tab-one__image__info {
-  right: 20px;
-  bottom: 20px;
+  right: -100px;
+  bottom: -30px;
 }
 @media (max-width: 767px) {
   .tab-one__image__info {
