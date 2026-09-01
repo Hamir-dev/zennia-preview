@@ -19057,10 +19057,17 @@ body.megamenu-popup-active .mobile-nav__content {
     margin-bottom: 30px;
   }
 }
+.tab-one__image__item--single {
+  flex: 1 1 100%;
+  width: 100%;
+}
 .tab-one__image img {
   border-radius: 10px;
   max-width: 100%;
   height: auto;
+}
+.tab-one__image__item--single img {
+  width: 100%;
 }
 .tab-one__image__info {
   position: absolute;
