@@ -19505,13 +19505,23 @@ body.megamenu-popup-active .mobile-nav__content {
   }
 }
 .tab-one__content__title {
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 600;
-  letter-spacing: -3%;
+  font-size: 38px;
+  line-height: 46px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--hyperfly-black, #08070C);
   margin: 0 0 25px;
 }
+@media (max-width: 767px) {
+  .tab-one__content__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
 .tab-one__content__text {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
   margin: 0 0 36px;
 }
 .tab-one__content__list {
