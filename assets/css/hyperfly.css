@@ -4245,6 +4245,10 @@ h6 {
     gap: 40px;
   }
 }
+.footer-one__top__content {
+  flex: 1 1 auto;
+  min-width: 0;
+}
 .footer-one__top--light .footer-one__top__title,
 .footer-one__top--light .footer-one__top__text {
   color: var(--hyperfly-black, #08070C);
