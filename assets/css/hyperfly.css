@@ -14504,6 +14504,8 @@ body.megamenu-popup-active .mobile-nav__content {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: center 20%;
+  object-position: center 20%;
 }
 .main-slider-one__content {
   position: relative;
