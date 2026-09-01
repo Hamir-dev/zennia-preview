@@ -19059,6 +19059,8 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 .tab-one__image--single {
   max-width: 410px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .tab-one__image__item--single {
   flex: none;
