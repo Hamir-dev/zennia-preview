@@ -16481,6 +16481,7 @@ body.megamenu-popup-active .mobile-nav__content {
   margin-right: 34px;
   border-left: 1px solid rgba(var(--hyperfly-white-rgb, 245, 240, 234), 0.15);
   padding-left: 34px;
+  text-align: center;
   transition: opacity 0.4s ease;
 }
 .tiers__item:first-child {
