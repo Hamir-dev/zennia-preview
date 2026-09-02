@@ -19653,12 +19653,18 @@ body.megamenu-popup-active .mobile-nav__content {
   border-right: 1px solid rgba(var(--hyperfly-black-rgb, 8, 7, 12), 0.07);
   padding: 29px 10px 23px;
   font-size: 18px;
+  white-space: nowrap;
   text-transform: capitalize;
   font-weight: 600;
   color: var(--hyperfly-black, #08070C);
   font-family: var(--hyperfly-heading-font, "Inter", sans-serif);
   letter-spacing: -2%;
   transition: all 0.4s ease;
+}
+@media (max-width: 1199px) {
+  .tab-one__tabs li {
+    white-space: normal;
+  }
 }
 .tab-one__tabs li::after {
   position: absolute;
@@ -19723,8 +19729,8 @@ body.megamenu-popup-active .mobile-nav__content {
   }
 }
 .tab-one__content__text {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 21px;
+  line-height: 33px;
   font-weight: 500;
   margin: 0 0 36px;
 }
@@ -19734,7 +19740,7 @@ body.megamenu-popup-active .mobile-nav__content {
   list-style: none;
 }
 .tab-one__content__list li {
-  font-size: 16px;
+  font-size: 19px;
   font-weight: 500;
   font-family: var(--hyperfly-heading-font, "Inter", sans-serif);
   margin: 0 0 4px;
