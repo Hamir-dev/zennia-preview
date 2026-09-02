@@ -19625,9 +19625,9 @@ body.megamenu-popup-active .mobile-nav__content {
   }
 }
 .tab-one .sec-title__text {
-  max-width: 525px;
-  font-size: 18px;
-  line-height: 35px;
+  max-width: 620px;
+  font-size: 22px;
+  line-height: 38px;
   font-weight: 500;
 }
 @media (max-width: 1199px) {
